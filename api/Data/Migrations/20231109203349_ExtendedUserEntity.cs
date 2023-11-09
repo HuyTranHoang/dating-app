@@ -28,12 +28,12 @@ namespace api.Data.Migrations
                 nullable: false,
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
-            migrationBuilder.AddColumn<DateOnly>(
+            migrationBuilder.AddColumn<DateTime>(
                 name: "DateOfBirth",
                 table: "Users",
-                type: "date",
+                type: "datetime2",
                 nullable: false,
-                defaultValue: new DateOnly(1, 1, 1));
+                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
             migrationBuilder.AddColumn<string>(
                 name: "Gender",

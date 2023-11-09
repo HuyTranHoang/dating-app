@@ -12,10 +12,12 @@ public static class ApplicationServiceExtensions
         services.AddDbContext<DataContext>(options =>
         {
             var connectionString = config.GetConnectionString("DefaultConnection");
-            options.UseSqlServer(connectionString, x => x.UseDateOnlyTimeOnly());
+            options.UseSqlServer(connectionString);
         });
         services.AddCors();
         services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         return services;
     }
