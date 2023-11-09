@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aptech\\AngularAsp\\api\\api.csproj": {}
+    "d:\\Aptech\\AngularAsp\\api\\api.csproj": {}
   },
   "projects": {
-    "D:\\Aptech\\AngularAsp\\api\\api.csproj": {
+    "d:\\Aptech\\AngularAsp\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aptech\\AngularAsp\\api\\api.csproj",
+        "projectUniqueName": "d:\\Aptech\\AngularAsp\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "D:\\Aptech\\AngularAsp\\api\\api.csproj",
+        "projectPath": "d:\\Aptech\\AngularAsp\\api\\api.csproj",
         "packagesPath": "C:\\Users\\nhokp\\.nuget\\packages\\",
-        "outputPath": "D:\\Aptech\\AngularAsp\\api\\obj\\",
+        "outputPath": "d:\\Aptech\\AngularAsp\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nhokp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +39,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.24, )"
@@ -53,6 +56,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.24, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.33.0, )"
             }
           },
           "imports": [
