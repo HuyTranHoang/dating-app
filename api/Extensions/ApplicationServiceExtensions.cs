@@ -11,7 +11,8 @@ public static class ApplicationServiceExtensions
     {
         services.AddDbContext<DataContext>(options =>
         {
-            options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+            var connectionString = config.GetConnectionString("DefaultConnection");
+            options.UseSqlServer(connectionString, x => x.UseDateOnlyTimeOnly());
         });
         services.AddCors();
         services.AddScoped<ITokenService, TokenService>();
