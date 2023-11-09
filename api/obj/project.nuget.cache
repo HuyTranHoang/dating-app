@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6j5MwjnVgmg9X5XbolN9peyLQFfEQUT4aWLIVr6AnT9m3kY88Ycw3BDM+HktRAZln3KmrHiJ1in2FfQEJxb8tw==",
+  "dgSpecHash": "1I0hPHCYct65W3PkvP02xig0o4D7WDkLaSxhE+JypV4rRlvNdoqhEOgZYh1Bo/zlUJct34Z2S9ibVaZ19VPiSQ==",
   "success": true,
-  "projectFilePath": "d:\\Aptech\\AngularAsp\\api\\api.csproj",
+  "projectFilePath": "D:\\Aptech\\AngularAsp\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhokp\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nhokp\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.24\\microsoft.aspnetcore.authentication.jwtbearer.6.0.24.nupkg.sha512",
