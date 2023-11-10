@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Aptech\\AngularAsp\\api\\api.csproj": {}
+    "D:\\Aptech\\AngularAsp\\api\\api.csproj": {}
   },
   "projects": {
-    "d:\\Aptech\\AngularAsp\\api\\api.csproj": {
+    "D:\\Aptech\\AngularAsp\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Aptech\\AngularAsp\\api\\api.csproj",
+        "projectUniqueName": "D:\\Aptech\\AngularAsp\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "d:\\Aptech\\AngularAsp\\api\\api.csproj",
+        "projectPath": "D:\\Aptech\\AngularAsp\\api\\api.csproj",
         "packagesPath": "C:\\Users\\nhokp\\.nuget\\packages\\",
-        "outputPath": "d:\\Aptech\\AngularAsp\\api\\obj\\",
+        "outputPath": "D:\\Aptech\\AngularAsp\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nhokp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

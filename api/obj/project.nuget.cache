@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gey8Ak0DjORl92uG8k3Igqj3K8UkuxHwdBBE0fStOsAhn9SDYwNFAGUwRQS8cstxiAOoJrBMcOauCnoaec3xQg==",
+  "dgSpecHash": "6ka5h/RUDh02YTH9nHNLpqKjaD0JGq1iUPJrTktyRhw045cJg0VM0bWof+nBwB5e6/STDdufxJR6Tem34v3CNg==",
   "success": true,
-  "projectFilePath": "d:\\Aptech\\AngularAsp\\api\\api.csproj",
+  "projectFilePath": "D:\\Aptech\\AngularAsp\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhokp\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\nhokp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
