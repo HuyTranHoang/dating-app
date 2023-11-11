@@ -1,21 +1,21 @@
 import { HttpClient } from '@angular/common/http'
-import { Injectable } from '@angular/core'
+import { Inject, Injectable } from '@angular/core'
 import { BehaviorSubject, map } from 'rxjs'
 import { User } from '../_models/user'
-import { environment } from '../../environments/environment'
+import { APP_SERVICE_CONFIG } from '../../_appconfig/appconfig.service'
+import { AppConfig } from '../../_appconfig/appconfig.interface'
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class AccountService {
-  baseUrl = environment.apiUrl
   private currentUserSource = new BehaviorSubject<User | null>(null)
   currentUser$ = this.currentUserSource.asObservable()
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, @Inject(APP_SERVICE_CONFIG) private config: AppConfig) {}
 
   login(model: any) {
-    return this.http.post<User>(this.baseUrl + 'account/login', model).pipe(
+    return this.http.post<User>(this.config.apiUrl + 'account/login', model).pipe(
       map((response: User) => {
         const user = response
         if (user) {
@@ -27,7 +27,7 @@ export class AccountService {
   }
 
   register(model: any) {
-    return this.http.post<User>(this.baseUrl + 'account/register', model).pipe(
+    return this.http.post<User>(this.config.apiUrl + 'account/register', model).pipe(
       map((user) => {
         if (user) {
           localStorage.setItem('user', JSON.stringify(user))

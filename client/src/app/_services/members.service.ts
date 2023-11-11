@@ -1,22 +1,22 @@
-import { Injectable } from '@angular/core'
-import { environment } from '../../environments/environment'
+import { Inject, Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { Member } from '../_models/member'
 import { map, of } from 'rxjs'
+import { APP_SERVICE_CONFIG } from '../../_appconfig/appconfig.service'
+import { AppConfig } from '../../_appconfig/appconfig.interface'
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class MembersService {
-  baseUrl = environment.apiUrl
   members: Member[] = []
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, @Inject(APP_SERVICE_CONFIG) private config: AppConfig) { }
 
   getMembers() {
     if (this.members.length > 0) return of(this.members)
-    return this.http.get<Member[]>(this.baseUrl + 'users').pipe(
+    return this.http.get<Member[]>(this.config.apiUrl + 'users').pipe(
       map(members => {
         this.members = members
         return members
@@ -28,11 +28,11 @@ export class MembersService {
     const member = this.members.find(x => x.userName === username)
     if (member) return of(member)
 
-    return this.http.get<Member>(this.baseUrl + 'users/' + username)
+    return this.http.get<Member>(this.config.apiUrl + 'users/' + username)
   }
 
   updateMember(member: Member) {
-    return this.http.put(this.baseUrl + 'users', member).pipe(
+    return this.http.put(this.config.apiUrl + 'users', member).pipe(
       map(() => {
         const index = this.members.indexOf(member)
         this.members[index] = {...this.members[index], ...member}

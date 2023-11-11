@@ -23,6 +23,7 @@ import { MemberCardComponent } from './members/member-card/member-card.component
 import { JwtInterceptor } from './_interceptiors/jwt.interceptor';
 import { MemberEditComponent } from './members/member-edit/member-edit.component'
 import { LoadingInterceptor } from './_interceptiors/loading.interceptor'
+import { APP_CONFIG, APP_SERVICE_CONFIG } from '../_appconfig/appconfig.service'
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { LoadingInterceptor } from './_interceptiors/loading.interceptor'
     SharedModule
   ],
   providers: [
+    {provide: APP_SERVICE_CONFIG, useValue: APP_CONFIG},
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true}
