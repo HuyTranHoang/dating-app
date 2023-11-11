@@ -20,7 +20,8 @@ import { ErrorInterceptor } from './_interceptiors/error.interceptor'
 import { NotFoundComponent } from './errors/not-found/not-found.component'
 import { ServerErrorComponent } from './errors/server-error/server-error.component'
 import { MemberCardComponent } from './members/member-card/member-card.component'
-import { JwtInterceptor } from './_interceptiors/jwt.interceptor'
+import { JwtInterceptor } from './_interceptiors/jwt.interceptor';
+import { MemberEditComponent } from './members/member-edit/member-edit.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { JwtInterceptor } from './_interceptiors/jwt.interceptor'
     TestErrorComponent,
     NotFoundComponent,
     ServerErrorComponent,
-    MemberCardComponent
+    MemberCardComponent,
+    MemberEditComponent
   ],
   imports: [
     BrowserAnimationsModule,
