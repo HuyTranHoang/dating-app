@@ -23,7 +23,9 @@ import { MemberCardComponent } from './members/member-card/member-card.component
 import { JwtInterceptor } from './_interceptiors/jwt.interceptor';
 import { MemberEditComponent } from './members/member-edit/member-edit.component'
 import { LoadingInterceptor } from './_interceptiors/loading.interceptor'
-import { APP_CONFIG, APP_SERVICE_CONFIG } from '../_appconfig/appconfig.service'
+import { APP_CONFIG, APP_SERVICE_CONFIG } from '../_appconfig/appconfig.service';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component'
+import { NgOptimizedImage } from '@angular/common'
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { APP_CONFIG, APP_SERVICE_CONFIG } from '../_appconfig/appconfig.service'
     NotFoundComponent,
     ServerErrorComponent,
     MemberCardComponent,
-    MemberEditComponent
+    MemberEditComponent,
+    PhotoEditorComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -47,7 +50,8 @@ import { APP_CONFIG, APP_SERVICE_CONFIG } from '../_appconfig/appconfig.service'
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    NgOptimizedImage
   ],
   providers: [
     {provide: APP_SERVICE_CONFIG, useValue: APP_CONFIG},

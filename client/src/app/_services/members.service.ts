@@ -6,13 +6,15 @@ import { APP_SERVICE_CONFIG } from '../../_appconfig/appconfig.service'
 import { AppConfig } from '../../_appconfig/appconfig.interface'
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
 export class MembersService {
   members: Member[] = []
 
-  constructor(private http: HttpClient, @Inject(APP_SERVICE_CONFIG) private config: AppConfig) { }
+  constructor(
+    private http: HttpClient,
+    @Inject(APP_SERVICE_CONFIG) private config: AppConfig
+  ) {}
 
   getMembers() {
     if (this.members.length > 0) return of(this.members)
@@ -35,8 +37,21 @@ export class MembersService {
     return this.http.put(this.config.apiUrl + 'users', member).pipe(
       map(() => {
         const index = this.members.indexOf(member)
-        this.members[index] = {...this.members[index], ...member}
+        this.members[index] = { ...this.members[index], ...member }
       })
+    )
+  }
+
+  setMainPhoto(photoId: number) {
+    return this.http.put(
+      this.config.apiUrl + 'users/set-main-photo/' + photoId,
+      {}
+    )
+  }
+
+  deletePhoto(photoId: number) {
+    return this.http.delete(
+      this.config.apiUrl + 'users/delete-photo/' + photoId
     )
   }
 }

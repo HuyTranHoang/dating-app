@@ -61,3 +61,5 @@ D:\Aptech\AngularAsp\api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System
 D:\Aptech\AngularAsp\api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Aptech\AngularAsp\api\bin\Debug\net6.0\AutoMapper.dll
 D:\Aptech\AngularAsp\api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Aptech\AngularAsp\api\bin\Debug\net6.0\CloudinaryDotNet.dll
+D:\Aptech\AngularAsp\api\bin\Debug\net6.0\Newtonsoft.Json.dll
