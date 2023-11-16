@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { NavComponent } from './nav/nav.component'
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { HomeComponent } from './home/home.component'
 import { RegisterComponent } from './register/register.component'
@@ -20,12 +20,14 @@ import { ErrorInterceptor } from './_interceptiors/error.interceptor'
 import { NotFoundComponent } from './errors/not-found/not-found.component'
 import { ServerErrorComponent } from './errors/server-error/server-error.component'
 import { MemberCardComponent } from './members/member-card/member-card.component'
-import { JwtInterceptor } from './_interceptiors/jwt.interceptor';
+import { JwtInterceptor } from './_interceptiors/jwt.interceptor'
 import { MemberEditComponent } from './members/member-edit/member-edit.component'
 import { LoadingInterceptor } from './_interceptiors/loading.interceptor'
-import { APP_CONFIG, APP_SERVICE_CONFIG } from '../_appconfig/appconfig.service';
+import { APP_CONFIG, APP_SERVICE_CONFIG } from '../_appconfig/appconfig.service'
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component'
-import { NgOptimizedImage } from '@angular/common'
+import { NgOptimizedImage } from '@angular/common';
+import { TextInputComponent } from './_forms/text-input/text-input.component';
+import { DatePickerComponent } from './_forms/date-picker/date-picker.component'
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { NgOptimizedImage } from '@angular/common'
     ServerErrorComponent,
     MemberCardComponent,
     MemberEditComponent,
-    PhotoEditorComponent
+    PhotoEditorComponent,
+    TextInputComponent,
+    DatePickerComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -50,14 +54,15 @@ import { NgOptimizedImage } from '@angular/common'
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    SharedModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    ReactiveFormsModule,
+    SharedModule
   ],
   providers: [
-    {provide: APP_SERVICE_CONFIG, useValue: APP_CONFIG},
-    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
-    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
-    {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true}
+    { provide: APP_SERVICE_CONFIG, useValue: APP_CONFIG },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })
