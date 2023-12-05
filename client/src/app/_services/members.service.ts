@@ -128,4 +128,18 @@ export class MembersService {
       this.config.apiUrl + 'users/delete-photo/' + photoId
     )
   }
+
+  addLike(username: string) {
+    return this.http.post(this.config.apiUrl + 'likes/' + username, {})
+  }
+
+  getLikes(predicate: string, pageNumber: number, pageSize: number) {
+    let params = this.getPaginationHeaders(pageNumber, pageSize)
+    params = params.append('predicate', predicate)
+
+    return this.getPaginatedResult<Member[]>(
+      this.config.apiUrl + 'likes',
+      params
+    )
+  }
 }
