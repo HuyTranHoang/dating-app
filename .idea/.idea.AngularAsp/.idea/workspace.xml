@@ -9,39 +9,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e7a1fc2-aed4-44ca-a5b7-07d2b1902e44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/app/_models/pagination.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/_models/userParams.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/UsersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/DTOs/UserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/DTOs/UserDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Data/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Helpers/UserParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Helpers/UserParams.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/WeatherForecast.cs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Controllers/MessagesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/DTOs/CreateMessageDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/DTOs/MessageDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Data/MessageRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Data/Migrations/20231207064240_MessageEntityAdded.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Data/Migrations/20231207064240_MessageEntityAdded.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Entities/Message.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Helpers/MessageParams.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Interfaces/IMessageRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/_models/message.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/_resolvers/member-detailed.resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/_services/message.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/_services/paginationHelper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/members/member-messages/member-messages.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/members/member-messages/member-messages.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/members/member-messages/member-messages.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Data/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Entities/AppUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Entities/AppUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Extensions/ApplicationServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Extensions/ApplicationServiceExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Helpers/AutoMapperProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Helpers/AutoMapperProfiles.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/ref/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/ref/api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/refint/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/refint/api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/_models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/_models/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/_modules/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/_modules/shared.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/_services/members.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/_services/members.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/members/member-list/member-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/members/member-list/member-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/members/member-list/member-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/members/member-list/member-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/members/member-card/member-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/members/member-card/member-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/members/member-detail/member-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/members/member-detail/member-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/members/member-detail/member-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/members/member-detail/member-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/messages/messages.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/messages/messages.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/messages/messages.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/messages/messages.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/nav/nav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,12 +85,16 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2XxOyn3KgB3ABusFZvGucTKeXSn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -96,7 +106,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Aptech\\AngularAsp\\client\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -177,6 +187,17 @@
       <workItem from="1699975344165" duration="489000" />
       <workItem from="1700255023642" duration="19000" />
       <workItem from="1700586101363" duration="3372000" />
+      <workItem from="1700591413851" duration="46000" />
+      <workItem from="1700641353915" duration="17000" />
+      <workItem from="1700735515011" duration="2191000" />
+      <workItem from="1700737737232" duration="2139000" />
+      <workItem from="1700795659364" duration="50000" />
+      <workItem from="1701790628259" duration="3930000" />
+      <workItem from="1701795616685" duration="17000" />
+      <workItem from="1701798973120" duration="130000" />
+      <workItem from="1701930926802" duration="343000" />
+      <workItem from="1701944278361" duration="1752000" />
+      <workItem from="1702024462830" duration="1390000" />
     </task>
     <task id="LOCAL-00001" summary="Building the User Interface">
       <option name="closed" value="true" />
@@ -226,7 +247,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699862368792</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Paging sorting and filtering in client and server">
+      <option name="closed" value="true" />
+      <created>1700741089928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700741089928</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Like User feature">
+      <option name="closed" value="true" />
+      <created>1701795571484</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701795571484</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +271,7 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Building the User Interface" />
     <MESSAGE value="Update member details" />
@@ -241,7 +279,9 @@
     <MESSAGE value="Adding cloudinary service and setting" />
     <MESSAGE value="Test upload image and redirect header location and 201" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Paging sorting and filtering in client and server" />
+    <MESSAGE value="Like User feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Like User feature" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

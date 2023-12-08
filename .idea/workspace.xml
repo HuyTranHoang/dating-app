@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f2de1d6-4582-40ee-9fc9-3bd0d29590cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api/Controllers/MessagesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/DTOs/CreateMessageDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/DTOs/MessageDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Data/MessageRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Data/Migrations/20231207064240_MessageEntityAdded.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Data/Migrations/20231207064240_MessageEntityAdded.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Entities/Message.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Helpers/MessageParams.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/Interfaces/IMessageRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/_models/message.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/_resolvers/member-detailed.resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/_services/message.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/_services/paginationHelper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/members/member-messages/member-messages.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/members/member-messages/member-messages.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/members/member-messages/member-messages.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Data/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Entities/AppUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Entities/AppUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Extensions/ApplicationServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Extensions/ApplicationServiceExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Helpers/AutoMapperProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Helpers/AutoMapperProfiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/ref/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/ref/api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/refint/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/refint/api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/_services/members.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/_services/members.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/members/member-card/member-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/members/member-card/member-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/members/member-detail/member-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/members/member-detail/member-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/members/member-detail/member-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/members/member-detail/member-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/messages/messages.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/messages/messages.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/messages/messages.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/messages/messages.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/nav/nav.component.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/client/.editorconfig" previewFile="$PROJECT_DIR$/client/src/app/members/member-card/member-card.component.html" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2Z88UhOhXAQp5kIRb1xQaWpmJ6V" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Aptech/AngularAsp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Aptech\\AngularAsp\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f2de1d6-4582-40ee-9fc9-3bd0d29590cb" name="Changes" comment="" />
+      <created>1701792362371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701792362371</updated>
+      <workItem from="1701792363436" duration="2748000" />
+      <workItem from="1701806636297" duration="66000" />
+      <workItem from="1701806711793" duration="164000" />
+      <workItem from="1701810831778" duration="9000" />
+      <workItem from="1702025252696" duration="5375000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
