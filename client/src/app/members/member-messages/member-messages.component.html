@@ -14,14 +14,14 @@
           <div class="chat-body">
             <div class="header">
               <small class="text-muted">
-                <span class="fa fa-clock-o">{{ message.messageSent | timeago }}</span>
+                <span class="fa fa-clock-o">{{ message.messageSent + 'Z' | timeago }}</span>
                 <span class="text-danger" *ngIf="!message.dateRead && message.senderUsername !== username">
                   (unread)</span>
                 <span class="text-success" *ngIf="message.dateRead && message.senderUsername !== username">
-                  (read {{ message.dateRead | timeago }} ago)</span>
+                  (read {{ message.dateRead + 'Z' | timeago }} ago)</span>
               </small>
             </div>
-            <p>{{message.content}}</p>
+            <p>{{ message.content }}</p>
           </div>
 
         </div>
@@ -30,11 +30,16 @@
   </div>
 
   <div class="card-footer">
-    <form>
+    <form #messageForm="ngForm" (ngSubmit)="sendMessage()" autocomplete="off">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Type your message here..." >
+        <input required
+               name="messageContent"
+               [(ngModel)]="messageContent"
+               type="text"
+               class="form-control"
+               placeholder="Type your message here...">
         <div class="input-group-append">
-          <button class="btn btn-primary">Send</button>
+          <button [disabled]="!messageForm.valid" type="submit" class="btn btn-primary">Send</button>
         </div>
       </div>
     </form>

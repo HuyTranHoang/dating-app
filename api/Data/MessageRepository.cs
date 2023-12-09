@@ -62,7 +62,7 @@ public class MessageRepository : IMessageRepository
                 || m.Recipient.UserName == recipientUserName
                 && m.Sender.UserName == currentUserName && m.SenderDeleted == false
             )
-            .OrderByDescending(m => m.MessageSent)
+            .OrderBy(m => m.MessageSent)
             .ToListAsync();
 
         var unreadMessages = messages.Where(m => m.DateRead == null && m.Recipient.UserName == currentUserName).ToList();
