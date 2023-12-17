@@ -6,7 +6,7 @@ import { APP_SERVICE_CONFIG } from '../../_appconfig/appconfig.service'
 import { AppConfig } from '../../_appconfig/appconfig.interface'
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class AccountService {
   private currentUserSource = new BehaviorSubject<User | null>(null)
@@ -38,6 +38,9 @@ export class AccountService {
   }
 
   setCurrentUser(user: User) {
+    user.roles = []
+    const roles = this.getDecodedToken(user.token).role
+    Array.isArray(roles) ? (user.roles = roles) : user.roles.push(roles)
     localStorage.setItem('user', JSON.stringify(user))
     this.currentUserSource.next(user)
   }
@@ -45,5 +48,9 @@ export class AccountService {
   logout() {
     localStorage.removeItem('user')
     this.currentUserSource.next(null)
+  }
+
+  getDecodedToken(token: string) {
+    return JSON.parse(atob(token.split('.')[1]))
   }
 }
