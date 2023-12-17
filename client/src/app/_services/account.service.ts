@@ -4,6 +4,7 @@ import { BehaviorSubject, map } from 'rxjs'
 import { User } from '../_models/user'
 import { APP_SERVICE_CONFIG } from '../../_appconfig/appconfig.service'
 import { AppConfig } from '../../_appconfig/appconfig.interface'
+import { PresenceService } from './presence.service'
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,8 @@ export class AccountService {
 
   constructor(
     private http: HttpClient,
-    @Inject(APP_SERVICE_CONFIG) private config: AppConfig
+    @Inject(APP_SERVICE_CONFIG) private config: AppConfig,
+    private presenceService: PresenceService
   ) {}
 
   login(model: any) {
@@ -43,11 +45,13 @@ export class AccountService {
     Array.isArray(roles) ? (user.roles = roles) : user.roles.push(roles)
     localStorage.setItem('user', JSON.stringify(user))
     this.currentUserSource.next(user)
+    this.presenceService.createHubConnection(user)
   }
 
   logout() {
     localStorage.removeItem('user')
     this.currentUserSource.next(null)
+    this.presenceService.stopHubConnection()
   }
 
   getDecodedToken(token: string) {
