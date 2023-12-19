@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2de1d6-4582-40ee-9fc9-3bd0d29590cb" name="Changes" comment="Add identity">
-      <change afterPath="$PROJECT_DIR$/api/Controllers/AdminController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Data/Seed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Data/Seed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Extensions/IdentityServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Extensions/IdentityServiceExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Interfaces/ITokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Interfaces/ITokenService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/Services/TokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/api/Services/TokenService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/bin/Debug/net6.0/api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/ref/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/ref/api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/Debug/net6.0/refint/api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/Debug/net6.0/refint/api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/api/obj/staticwebassets.pack.sentinel" afterDir="false" />
-    </list>
+    <list default="true" id="4f2de1d6-4582-40ee-9fc9-3bd0d29590cb" name="Changes" comment="Add identity" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,24 +37,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Aptech/AngularAsp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Aptech\\AngularAsp\\client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Aptech/AngularAsp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\Aptech\\AngularAsp\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,6 +74,8 @@
       <workItem from="1702324466923" duration="25000" />
       <workItem from="1702395616680" duration="631000" />
       <workItem from="1702658080634" duration="1000" />
+      <workItem from="1702930828645" duration="73000" />
+      <workItem from="1702930926579" duration="167000" />
     </task>
     <task id="LOCAL-00001" summary="Add identity">
       <option name="closed" value="true" />

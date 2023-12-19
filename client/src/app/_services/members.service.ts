@@ -9,6 +9,7 @@ import { UserParams } from '../_models/userParams'
 import { AccountService } from './account.service'
 import { User } from '../_models/user'
 import { getPaginatedResult, getPaginationHeaders } from './paginationHelper'
+import { PresenceService } from './presence.service'
 
 @Injectable({
   providedIn: 'root'
@@ -58,14 +59,21 @@ export class MembersService {
       return of(response)
     }
 
-    let params = getPaginationHeaders(userParams.pageNumber, userParams.pageSize)
+    let params = getPaginationHeaders(
+      userParams.pageNumber,
+      userParams.pageSize
+    )
 
     params = params.append('minAge', userParams.minAge)
     params = params.append('maxAge', userParams.maxAge)
     params = params.append('gender', userParams.gender)
     params = params.append('orderBy', userParams.orderBy)
 
-    return getPaginatedResult<Member[]>(this.config.apiUrl + 'users', params, this.http).pipe(
+    return getPaginatedResult<Member[]>(
+      this.config.apiUrl + 'users',
+      params,
+      this.http
+    ).pipe(
       map(response => {
         this.memberCache.set(Object.values(userParams).join('-'), response)
         return response
@@ -89,7 +97,7 @@ export class MembersService {
     return this.http.put(this.config.apiUrl + 'users', member).pipe(
       map(() => {
         const index = this.members.indexOf(member)
-        this.members[index] = {...this.members[index], ...member}
+        this.members[index] = { ...this.members[index], ...member }
       })
     )
   }

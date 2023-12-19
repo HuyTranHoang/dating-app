@@ -6,31 +6,75 @@ import { Message } from '../_models/message'
 
 import { APP_SERVICE_CONFIG } from '../../_appconfig/appconfig.service'
 import { AppConfig } from '../../_appconfig/appconfig.interface'
+import { HubConnection, HubConnectionBuilder } from '@microsoft/signalr'
+import { User } from '../_models/user'
+import { BehaviorSubject, take } from 'rxjs'
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessageService {
+  private hubConnection?: HubConnection
+  private messageThreadSource = new BehaviorSubject<Message[]>([])
+  messageThread$ = this.messageThreadSource.asObservable()
+
   constructor(
     private http: HttpClient,
     @Inject(APP_SERVICE_CONFIG) private config: AppConfig
   ) {}
 
+  createHubConnection(user: User, otherUsername: string) {
+    this.hubConnection = new HubConnectionBuilder()
+      .withUrl(this.config.hubUrl + 'message?user=' + otherUsername, {
+        accessTokenFactory: () => user.token
+      })
+      .withAutomaticReconnect()
+      .build()
+
+    this.hubConnection.start().catch(error => console.log(error))
+
+    this.hubConnection.on('ReceiveMessageThread', messages => {
+      this.messageThreadSource.next(messages)
+    })
+
+    this.hubConnection.on('NewMessage', message => {
+      this.messageThread$.pipe(take(1)).subscribe({
+        next: messages => {
+          this.messageThreadSource.next([...messages, message])
+        }
+      })
+    })
+  }
+
+  stopHubConnection() {
+    if (this.hubConnection) {
+      this.hubConnection.stop()
+    }
+  }
+
   getMessages(pageNumber: number, pageSize: number, container: string) {
     let params = getPaginationHeaders(pageNumber, pageSize)
     params = params.append('Container', container)
-    return getPaginatedResult<Message[]>(this.config.apiUrl + 'messages', params, this.http)
+    return getPaginatedResult<Message[]>(
+      this.config.apiUrl + 'messages',
+      params,
+      this.http
+    )
   }
 
   getMessageThread(username: string) {
-    return this.http.get<Message[]>(this.config.apiUrl + 'messages/thread/' + username)
+    return this.http.get<Message[]>(
+      this.config.apiUrl + 'messages/thread/' + username
+    )
   }
 
-  sendMessage(username: string, content: string) {
-    return this.http.post<Message>(this.config.apiUrl + 'messages', {
-      recipientUsername: username,
-      content
-    })
+  async sendMessage(username: string, content: string) {
+    return this.hubConnection
+      ?.invoke('SendMessage', {
+        recipientUsername: username,
+        content
+      })
+      .catch(error => console.log(error))
   }
 
   deleteMessage(id: number) {
